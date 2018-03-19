@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93412875205FBCAB0008BF54 /* robotHead.scn in Resources */ = {isa = PBXBuildFile; fileRef = 93412874205FBCAB0008BF54 /* robotHead.scn */; };
+		93412878205FBD0D0008BF54 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93412877205FBD0C0008BF54 /* SceneKit.framework */; };
+		9341287A205FBD300008BF54 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93412879205FBD300008BF54 /* ARKit.framework */; };
+		9341287C205FBD3A0008BF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341287B205FBD3A0008BF54 /* UIKit.framework */; };
 		93B09B43205F815E006D9EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B42205F815E006D9EA7 /* AppDelegate.m */; };
 		93B09B46205F815F006D9EA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B45205F815F006D9EA7 /* ViewController.m */; };
 		93B09B49205F815F006D9EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B09B47205F815F006D9EA7 /* Main.storyboard */; };
@@ -15,6 +19,8 @@
 		93B09B51205F815F006D9EA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B50205F815F006D9EA7 /* main.m */; };
 		93B09B5B205F815F006D9EA7 /* ARkitFaceExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B5A205F815F006D9EA7 /* ARkitFaceExampleTests.m */; };
 		93B09B66205F815F006D9EA7 /* ARkitFaceExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B65205F815F006D9EA7 /* ARkitFaceExampleUITests.m */; };
+		93B09B75205F8215006D9EA7 /* VirtualContentUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B74205F8215006D9EA7 /* VirtualContentUpdater.m */; };
+		93B09BB5205F96C9006D9EA7 /* RobotHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09BB4205F96C9006D9EA7 /* RobotHead.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93412874205FBCAB0008BF54 /* robotHead.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = robotHead.scn; path = /Users/wangwensi/Desktop/ARkitFaceExample/ARkitFaceExample/robotHead.scn; sourceTree = "<absolute>"; };
+		93412877205FBD0C0008BF54 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		93412879205FBD300008BF54 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		9341287B205FBD3A0008BF54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93B09B3E205F815E006D9EA7 /* ARkitFaceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARkitFaceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B09B41205F815E006D9EA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93B09B42205F815E006D9EA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +61,10 @@
 		93B09B61205F815F006D9EA7 /* ARkitFaceExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARkitFaceExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B09B65205F815F006D9EA7 /* ARkitFaceExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARkitFaceExampleUITests.m; sourceTree = "<group>"; };
 		93B09B67205F815F006D9EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B09B73205F8215006D9EA7 /* VirtualContentUpdater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtualContentUpdater.h; sourceTree = "<group>"; };
+		93B09B74205F8215006D9EA7 /* VirtualContentUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VirtualContentUpdater.m; sourceTree = "<group>"; };
+		93B09BB3205F96C9006D9EA7 /* RobotHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotHead.h; sourceTree = "<group>"; };
+		93B09BB4205F96C9006D9EA7 /* RobotHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobotHead.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9341287C205FBD3A0008BF54 /* UIKit.framework in Frameworks */,
+				9341287A205FBD300008BF54 /* ARKit.framework in Frameworks */,
+				93412878205FBD0D0008BF54 /* SceneKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93412876205FBD0C0008BF54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9341287B205FBD3A0008BF54 /* UIKit.framework */,
+				93412879205FBD300008BF54 /* ARKit.framework */,
+				93412877205FBD0C0008BF54 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93B09B35205F815E006D9EA7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,7 @@
 				93B09B59205F815F006D9EA7 /* ARkitFaceExampleTests */,
 				93B09B64205F815F006D9EA7 /* ARkitFaceExampleUITests */,
 				93B09B3F205F815E006D9EA7 /* Products */,
+				93412876205FBD0C0008BF54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +133,16 @@
 				93B09B42205F815E006D9EA7 /* AppDelegate.m */,
 				93B09B44205F815F006D9EA7 /* ViewController.h */,
 				93B09B45205F815F006D9EA7 /* ViewController.m */,
+				93412874205FBCAB0008BF54 /* robotHead.scn */,
 				93B09B47205F815F006D9EA7 /* Main.storyboard */,
 				93B09B4A205F815F006D9EA7 /* Assets.xcassets */,
 				93B09B4C205F815F006D9EA7 /* LaunchScreen.storyboard */,
 				93B09B4F205F815F006D9EA7 /* Info.plist */,
 				93B09B50205F815F006D9EA7 /* main.m */,
+				93B09B73205F8215006D9EA7 /* VirtualContentUpdater.h */,
+				93B09B74205F8215006D9EA7 /* VirtualContentUpdater.m */,
+				93B09BB3205F96C9006D9EA7 /* RobotHead.h */,
+				93B09BB4205F96C9006D9EA7 /* RobotHead.m */,
 			);
 			path = ARkitFaceExample;
 			sourceTree = "<group>";
@@ -241,6 +274,7 @@
 				93B09B4E205F815F006D9EA7 /* LaunchScreen.storyboard in Resources */,
 				93B09B4B205F815F006D9EA7 /* Assets.xcassets in Resources */,
 				93B09B49205F815F006D9EA7 /* Main.storyboard in Resources */,
+				93412875205FBCAB0008BF54 /* robotHead.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B09B46205F815F006D9EA7 /* ViewController.m in Sources */,
+				93B09B75205F8215006D9EA7 /* VirtualContentUpdater.m in Sources */,
 				93B09B51205F815F006D9EA7 /* main.m in Sources */,
+				93B09BB5205F96C9006D9EA7 /* RobotHead.m in Sources */,
 				93B09B43205F815E006D9EA7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
