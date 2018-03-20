@@ -19,10 +19,6 @@
         _eyeLeftNode = [self childNodeWithName:@"eyeLeft" recursively:YES];
         _eyeRightNode = [self childNodeWithName:@"eyeRight" recursively:YES];
         _originalJawY = _jawNode.position.y;
-        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//
-//        });
     }
     return self;
 }
@@ -32,12 +28,11 @@
     NSDictionary *blendShapes= withFaceAnchor.blendShapes;
     CGFloat eyeBlinkLeft = [blendShapes[ARBlendShapeLocationEyeBlinkLeft] floatValue];
     CGFloat eyeBlinkRight = [blendShapes[ARBlendShapeLocationEyeBlinkRight] floatValue];
-    CGFloat jawOpen = [blendShapes[ARBlendShapeLocationEyeBlinkLeft] floatValue];
+    CGFloat jawOpen = [blendShapes[ARBlendShapeLocationJawOpen] floatValue];
     _eyeLeftNode.scale = SCNVector3Make(_eyeLeftNode.scale.x, _eyeLeftNode.scale.y, 1 - eyeBlinkLeft);
     _eyeRightNode.scale = SCNVector3Make(_eyeRightNode.scale.x, _eyeRightNode.scale.y, 1 -eyeBlinkRight);
     SCNVector3 v1; SCNVector3 v2;
-    [_jawNode getBoundingBoxMin:&v1 max:&v2
-     ];
+    [_jawNode getBoundingBoxMin:&v1 max:&v2];
     _jawNode.position =  SCNVector3Make(_jawNode.position.x, _originalJawY - (v2.y - v1.y) * jawOpen, _jawNode.position.z);
 }
 

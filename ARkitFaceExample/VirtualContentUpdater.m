@@ -16,8 +16,8 @@
     if (self) {
         _serialQueue = dispatch_queue_create("com.example.apple-samplecode.ARKitFaceExample.serialSceneKitQueue", 0);
         NSString *url = [[NSBundle mainBundle] pathForResource:@"robotHead" ofType:@"scn" inDirectory:nil];
-        NSURL *url1 = [NSURL URLWithString:url];
-        _robotHead = [RobotHead referenceNodeWithURL:url1];
+        NSURL *url1 = [NSURL fileURLWithPath:url];
+        _robotHead =  [RobotHead referenceNodeWithURL:url1];
     }
     
     return self;

@@ -28,8 +28,6 @@
     _sceneView.session.delegate = self;
     _sceneView.automaticallyUpdatesLighting = true;
     [self.view addSubview:_sceneView];
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (ARSession *)session

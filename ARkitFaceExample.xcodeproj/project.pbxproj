@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93412875205FBCAB0008BF54 /* robotHead.scn in Resources */ = {isa = PBXBuildFile; fileRef = 93412874205FBCAB0008BF54 /* robotHead.scn */; };
 		93412878205FBD0D0008BF54 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93412877205FBD0C0008BF54 /* SceneKit.framework */; };
 		9341287A205FBD300008BF54 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93412879205FBD300008BF54 /* ARKit.framework */; };
 		9341287C205FBD3A0008BF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341287B205FBD3A0008BF54 /* UIKit.framework */; };
+		9341289A206093360008BF54 /* robotHead.scn in Resources */ = {isa = PBXBuildFile; fileRef = 93412874205FBCAB0008BF54 /* robotHead.scn */; };
 		93B09B43205F815E006D9EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B42205F815E006D9EA7 /* AppDelegate.m */; };
 		93B09B46205F815F006D9EA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B45205F815F006D9EA7 /* ViewController.m */; };
 		93B09B49205F815F006D9EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B09B47205F815F006D9EA7 /* Main.storyboard */; };
@@ -271,10 +271,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9341289A206093360008BF54 /* robotHead.scn in Resources */,
 				93B09B4E205F815F006D9EA7 /* LaunchScreen.storyboard in Resources */,
 				93B09B4B205F815F006D9EA7 /* Assets.xcassets in Resources */,
 				93B09B49205F815F006D9EA7 /* Main.storyboard in Resources */,
-				93412875205FBCAB0008BF54 /* robotHead.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
