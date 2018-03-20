@@ -8,7 +8,10 @@
 
 #import "VirtualContentUpdater.h"
 
-@implementation VirtualContentUpdater 
+@interface VirtualContentUpdater() <SCNNodeRendererDelegate>
+@end
+
+@implementation VirtualContentUpdater
 
 - (instancetype)init
 {
@@ -18,6 +21,7 @@
         NSString *url = [[NSBundle mainBundle] pathForResource:@"robotHead" ofType:@"scn" inDirectory:nil];
         NSURL *url1 = [NSURL fileURLWithPath:url];
         _robotHead =  [RobotHead referenceNodeWithURL:url1];
+        _robotHead.rendererDelegate = self;
     }
     
     return self;
@@ -41,6 +45,13 @@
 - (void)renderer:(id <SCNSceneRenderer>)renderer didUpdateNode:(SCNNode *)node forAnchor:(ARFaceAnchor *)anchor
 {
     [_robotHead update:anchor];
+}
+
+#pragma mark - SCNNodeRendererDelegate
+
+- (void)renderNode:(SCNNode *)node renderer:(SCNRenderer *)renderer arguments:(NSDictionary<NSString *, id> *)arguments
+{
+    
 }
 
 @end
