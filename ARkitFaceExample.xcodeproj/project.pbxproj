@@ -11,6 +11,8 @@
 		9341287A205FBD300008BF54 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93412879205FBD300008BF54 /* ARKit.framework */; };
 		9341287C205FBD3A0008BF54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341287B205FBD3A0008BF54 /* UIKit.framework */; };
 		9341289A206093360008BF54 /* robotHead.scn in Resources */ = {isa = PBXBuildFile; fileRef = 93412874205FBCAB0008BF54 /* robotHead.scn */; };
+		9379EA882060D9120096146A /* WXHARRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379EA842060D9110096146A /* WXHARRecorder.m */; };
+		9379EA892060D9120096146A /* WXHAssetWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379EA862060D9110096146A /* WXHAssetWriter.m */; };
 		93B09B43205F815E006D9EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B42205F815E006D9EA7 /* AppDelegate.m */; };
 		93B09B46205F815F006D9EA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B09B45205F815F006D9EA7 /* ViewController.m */; };
 		93B09B49205F815F006D9EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B09B47205F815F006D9EA7 /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 		93412877205FBD0C0008BF54 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		93412879205FBD300008BF54 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		9341287B205FBD3A0008BF54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9379EA842060D9110096146A /* WXHARRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHARRecorder.m; sourceTree = "<group>"; };
+		9379EA852060D9110096146A /* WXHAssetWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHAssetWriter.h; sourceTree = "<group>"; };
+		9379EA862060D9110096146A /* WXHAssetWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXHAssetWriter.m; sourceTree = "<group>"; };
+		9379EA872060D9110096146A /* WXHARRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXHARRecorder.h; sourceTree = "<group>"; };
 		93B09B3E205F815E006D9EA7 /* ARkitFaceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARkitFaceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B09B41205F815E006D9EA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93B09B42205F815E006D9EA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +111,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9379EA832060D9110096146A /* WXHARRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				9379EA872060D9110096146A /* WXHARRecorder.h */,
+				9379EA842060D9110096146A /* WXHARRecorder.m */,
+				9379EA852060D9110096146A /* WXHAssetWriter.h */,
+				9379EA862060D9110096146A /* WXHAssetWriter.m */,
+			);
+			path = WXHARRecorder;
+			sourceTree = "<group>";
+		};
 		93B09B35205F815E006D9EA7 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +146,7 @@
 		93B09B40205F815E006D9EA7 /* ARkitFaceExample */ = {
 			isa = PBXGroup;
 			children = (
+				9379EA832060D9110096146A /* WXHARRecorder */,
 				93B09B41205F815E006D9EA7 /* AppDelegate.h */,
 				93B09B42205F815E006D9EA7 /* AppDelegate.m */,
 				93B09B44205F815F006D9EA7 /* ViewController.h */,
@@ -299,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9379EA892060D9120096146A /* WXHAssetWriter.m in Sources */,
+				9379EA882060D9120096146A /* WXHARRecorder.m in Sources */,
 				93B09B46205F815F006D9EA7 /* ViewController.m in Sources */,
 				93B09B75205F8215006D9EA7 /* VirtualContentUpdater.m in Sources */,
 				93B09B51205F815F006D9EA7 /* main.m in Sources */,

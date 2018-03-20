@@ -51,6 +51,7 @@
 
 - (void)renderNode:(SCNNode *)node renderer:(SCNRenderer *)renderer arguments:(NSDictionary<NSString *, id> *)arguments
 {
+    NSLog(@"%d",(int)renderer.renderingAPI);
     
 }
 
