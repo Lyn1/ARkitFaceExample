@@ -2,14 +2,14 @@
 //  WXHARRecorder.m
 //  ARRecorder
 //
-//  Created by 伍小华 on 2018/2/27.
-//  Copyright © 2018年 伍小华. All rights reserved.
+//  Created by Wence on 2018/2/27.
+//  Copyright © 2018年 Wence. All rights reserved.
 //
 
 #import "WXHARRecorder.h"
 #import <UIKit/UIKit.h>
-#import <ARKit/ARKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <ARKit/ARKit.h>
 
 
 @interface WXHARRecorder()<AVCaptureAudioDataOutputSampleBufferDelegate>
@@ -153,6 +153,11 @@
             CVPixelBufferRelease(buffer);
         }
     });
+}
+
+- (void)setScene:(SCNScene *)scene
+{
+    self.renderer.scene = scene;
 }
 
 - (void)startRecording:(ARSCNView *)scnView

@@ -2,8 +2,8 @@
 //  WXHAssetWriter.h
 //  ARRecorder
 //
-//  Created by 伍小华 on 2018/3/1.
-//  Copyright © 2018年 伍小华. All rights reserved.
+//  Created by Wence on 2018/3/1.
+//  Copyright © 2018年 Wence. All rights reserved.
 //
 
 //DEBUG 模式下打印日志,当前行

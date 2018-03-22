@@ -2,8 +2,8 @@
 //  WXHARRecorder.h
 //  ARRecorder
 //
-//  Created by 伍小华 on 2018/2/27.
-//  Copyright © 2018年 伍小华. All rights reserved.
+//  Created by Wence on 2018/2/27.
+//  Copyright © 2018年 Wence. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, WXHARRecorderStatus) {
 };
 
 @class ARSCNView;
+@class SCNScene;
 @interface WXHARRecorder : NSObject
 @property (nonatomic, assign) WXHARRecorderStatus status;
 
@@ -24,4 +25,7 @@ typedef NS_ENUM(NSInteger, WXHARRecorderStatus) {
 - (void)startSession;
 - (void)startRecording:(ARSCNView *)scnView;
 - (void)stopRecording:(CompletionHeander)hander;
+
+- (void)setScene:(SCNScene *)scene;
+
 @end
